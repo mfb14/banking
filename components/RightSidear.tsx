@@ -1,13 +1,10 @@
 "use client"
-import { sidebarLinks } from "@/constants"
-import { cn } from "@/lib/utils"
+
 import Image from "next/image"
 import Link from "next/link"
-import { usePathname } from "next/navigation"
 import BankCard from "./BankCard"
 
 const RightSidear = ({user,transactions,banks}:RightSidebarProps)=> {
-  const pathname = usePathname();
 
   return (
     <aside className="right-sidebar">
@@ -21,14 +18,14 @@ const RightSidear = ({user,transactions,banks}:RightSidebarProps)=> {
                 <h1 className="profile-name">
                   {user.firstName} {user.lastName}
                 </h1>
-                <p className="user-email">
+                <p className="profile-email">
                   {user.email}
                 </p>
               </div>
             </div>
         </section>
         <section className="banks">
-          <div className="w-full justify-between">
+          <div className="flex w-full justify-between">
             <h2 className="header-2">My Banks</h2>
             <Link href="/" className="flex gap-2">
               <Image src="/icons/plus.svg" width={20} height={20} alt="plus"/>

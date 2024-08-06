@@ -21,9 +21,9 @@ const BankCard = ({account,userName,showBalance}:CreditCardProps) => {
                     <h1 className="text-12 font-semibold text-white">
                         {userName}
                     </h1>
-                    <h1 className="text-12 font-semibold text-white">
+                    <h2 className="text-12 font-semibold text-white">
                         ●●/●●
-                    </h1>
+                    </h2>
                 </div>
                 <p className="text-14 font-semibold tracking-[1.1px] text-white">
                     ●●●● ●●●● ●●●● <span className="text-16">1234</span>
@@ -41,7 +41,7 @@ const BankCard = ({account,userName,showBalance}:CreditCardProps) => {
                 src="/icons/mastercard.svg"
                 width={45}
                 height={32}
-                alt="pay"
+                alt="mastercard"
                 className="ml-5"     
             />
         </div>
@@ -49,6 +49,7 @@ const BankCard = ({account,userName,showBalance}:CreditCardProps) => {
             src="/icons/lines.png"
             width={316}
             height={190}
+            alt="lines"
             className="absolute top-0 left-0"
         />
         </Link>
